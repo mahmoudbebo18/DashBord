@@ -5,15 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chorom meta inspect -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    بسم الله
+
+    <!-- start login -->
+
+    <section class="login">
+        <div class="container-fluid form-holder">
+            <form class="login-form">
+                <h5 class="text-capitalize">sign in to your account</h5>
+                <div class="form-outline">
+                    <input type="email" id="typeEmail" class="form-control" />
+                    <label class="form-label" for="typeEmail">
+                        <i class="fas fa-envelope-open"></i>Email
+                    </label>
+                </div>
+                <div class="form-outline">
+                    <input type="password" id="typePassword" class="form-control" />
+                    <label class="form-label" for="typePassword">
+                        <i class="fas fa-key"></i>Password
+                    </label>
+                </div>
+                <!-- forgit your pass -->
+                <div class="forgot">
+                    <a data-toggle="modal" data-target="#forgetModalCenter" href="#"> Forgot Password ? </a>
+
+                </div>
+
+                <button class="btn btn-primary form-control">
+                    <i class="fas fa-unlock-alt"></i>SIGN IN
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- forgit password modal -->
+    <div class="modal fade" id="forgetModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Get Your Password
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-center">
+
+                                    <p>If you have forgotten your password you can reset it here.</p>
+                                    <div class="panel-body">
+                                        <fieldset>
+                                            <div class="form-outline" style="margin-bottom: 16px;">
+                                                <input type="email" id="typeEmail" class="form-control" />
+                                                <label class="form-label" for="typeEmail">
+                                                    <i class="fas fa-envelope-open mr-2"></i>Email
+                                                </label>
+                                            </div>
+                                            <input class="btn btn-lg btn-primary btn-block" value=" Send Me The Password" type="submit">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"> Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -21,6 +101,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
