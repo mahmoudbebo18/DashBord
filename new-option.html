@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chorom meta inspect -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!--dashBord Holder-->
+
+    <section class="dashbord">
+        <aside class="dash-link">
+            <div class="heading">
+                <h5 class="text-center">Admin Dashbord</h5>
+            </div>
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-basket"></i> Orders </a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Users </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-store"></i> Stores </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Areas </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+        <article class="dash-content">
+            <div class="orders order-details">
+
+
+                <div class="add-new-opt">
+                    <form>
+                        <!-- option name-->
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <!-- option desc-->
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input type="text" class="form-control" required>
+
+                        </div>
+                        <div class="option-price d-flex">
+                            <div class="opt-modifier">
+                                <label>Option</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="opt-price">
+                                <div class="form-group">
+                                    <label>Price(KWD)</label>
+                                    <input type="number" class="form-control">
+                                </div>
+                                <div class="form-group second">
+                                    <label>Tax</label>
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-option">
+                            <h5>Can This Option Be Chosen More Than Once ? </h5>
+                            <div class="no alert-info">
+                                <input class="alert alert-warning" type="checkbox" class="form-control">
+                                <span>No</span>
+                            </div>
+                            <div class="multi-time alert-info d-flex">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Yes, Up to </span>
+                                </div>
+
+                                <div class="counter">
+                                    <!-- Start Inc & Dec-->
+                                    <div id="incdec">
+
+                                        <a href="#" class="btn btn-outline-primary" id="up">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <input class="form-control ml-3 mr-3" type="text" value="1" />
+                                        <a href="#" class="btn btn-outline-primary" id="down">
+
+                                            <i class="fa fa-minus"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-option">
+                            <h5>Can This Option Required ? </h5>
+                            <div class="no alert-info">
+                                <input class="alert alert-warning" type="checkbox" class="form-control">
+                                <span>No</span>
+                            </div>
+                            <div class="multi-time alert-info d-flex">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Yes </span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="choose-option">
+                            <h5>Which Item Have This Option ? </h5>
+                            <div class="no alert-info">
+                                <input class="alert alert-warning" type="checkbox" class="form-control">
+                                <span>Item Number 1</span>
+                            </div>
+                            <div class="multi-time alert-info d-flex">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Item Number 2</span>
+                                </div>
+
+
+                            </div>
+                            <div class="multi-time alert-info d-flex">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Item Number 2</span>
+                                </div>
+
+
+                            </div>
+                            <div class="multi-time alert-info d-flex">
+                                <div>
+                                    <input type="checkbox">
+                                    <span>Item Number 2</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <button class="btn btn-primary form-control mt-3">Save </button>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </article>
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
