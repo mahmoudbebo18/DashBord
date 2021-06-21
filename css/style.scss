@@ -255,6 +255,28 @@ body {
     }
 }
 
+.form-check-input[type=checkbox]:checked:focus {
+    background-color: #3ade18 !important;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-color: #3ade18 !important;
+}
+
+.form-switch .form-check-input:checked[type=checkbox]:after {
+    background-color: #f1f1f1;
+}
+
+.form-switch .form-check-input {
+    background-color: #f51a1a;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 ///////////////// end global rules
 // start login
 .login {
@@ -705,6 +727,46 @@ body {
         }
         .form-group.second {
             margin-left: 2%;
+        }
+    }
+}
+
+/////settings
+.settings {
+    width: 300px;
+    max-width: 300px;
+    padding: 15px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    margin: auto;
+    .upload-area {
+        width: 130px;
+        height: 100px;
+        margin: auto;
+    }
+    .uploading {
+        .upload-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            background-color: #d7aa2e;
+            color: #fff;
+            padding: 5px;
+            font-size: 12px;
+            width: 130px;
+            margin: auto;
+            label {
+                margin: 0
+            }
+        }
+    }
+    .form-outline {
+        label {
+            font-size: 13px;
+            i {
+                margin-right: 5px;
+            }
         }
     }
 }

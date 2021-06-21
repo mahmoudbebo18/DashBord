@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chorom meta inspect -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!--dashBord Holder-->
+
+    <section class="dashbord">
+        <aside class="dash-link">
+            <div class="heading">
+                <h5 class="text-center">Admin Dashbord</h5>
+            </div>
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-basket"></i> Orders </a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cog"></i> Settings </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Users </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-store"></i> Stores </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Areas </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+        <article class="dash-content">
+            <div class="orders order-details">
+
+
+                <div class="users">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Arabic Title</th>
+                                <th scope="col"> Status</th>
+                                <th scope="col">Working Hours</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>Mahmoud</td>
+                                <td>محمود</td>
+                                <td class="">
+                                    <!-- Default switch -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="alert-info p-1">
+                                        <p class="font-weight-bold">From : 10AM</p>
+                                        <p class="font-weight-bold">To : 12PM</p>
+                                    </div>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Mahmoud</td>
+                                <td>محمود</td>
+                                <td class="">
+                                    <!-- Default switch -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="alert-info p-1">
+                                        <p class="font-weight-bold">From : 10AM</p>
+                                        <p class="font-weight-bold">To : 12PM</p>
+                                    </div>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+
+                                <td>Mahmoud</td>
+                                <td>محمود</td>
+                                <td class="">
+                                    <!-- Default switch -->
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="alert-info p-1">
+                                        <p class="font-weight-bold">From : 10AM</p>
+                                        <p class="font-weight-bold">To : 12PM</p>
+                                    </div>
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+    <!-- confirm delete modal -->
+    <!--Modal: modalConfirmDelete-->
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Are you sure?</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <i class="fas fa-times fa-4x animated rotateIn"></i>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-outline-danger">Yes</a>
+                    <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalConfirmDelete-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
