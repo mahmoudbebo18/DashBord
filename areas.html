@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chorom meta inspect -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!--dashBord Holder-->
+
+    <section class="dashbord">
+        <aside class="dash-link">
+            <div class="heading">
+                <h5 class="text-center">Admin Dashbord</h5>
+            </div>
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-basket"></i> Orders </a>
+                    </li>
+                    <li>
+                        <a href="menu.html"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                    <li>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings </a>
+                    </li>
+                    <li>
+                        <a href="users.html"><i class="fas fa-users"></i> Users </a>
+                    </li>
+                    <li>
+                        <a href="stores.html"><i class="fas fa-store"></i> Stores </a>
+                    </li>
+                    <li class="active">
+                        <a href="areas.html"><i class="fas fa-map-marker-alt"></i> Areas </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </aside>
+        <article class="dash-content areas">
+            <div class="orders order-details">
+
+
+                <div class="users">
+                    <div class="cover-head d-flex justify-content-between">
+                        <div class="heading">
+                            <h5>Coverage Area</h5>
+                            <p class="text-capitalize">All Star Chicken, <span>Al-Qurain</span></p>
+                        </div>
+                        <div class="drop">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Name</label>
+                                <select class=" custom-select form-control">
+                                    <option selected>Select..</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- all areas and their status -->
+
+                    <div class="available-areas mt-4">
+                        <!-- Search-->
+                        <div class="search">
+                            <div class="form-outline">
+                                <input type="text" id="typeEmail" class="form-control" />
+                                <label class="form-label" for="typeEmail">
+                                    <i class="fas fa-search mr-2"></i>Search
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Areas -->
+                        <div class="all -areas">
+
+                            <div class="area-container d-flex justify-content-between">
+                                <div class="area-name">
+                                    <h4 class="text-capitalize">Al-Qurain</h4>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                </div>
+                                <!-- area status -->
+
+                                <!-- Default switch -->
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="all -areas">
+
+                            <div class="area-container d-flex justify-content-between">
+                                <div class="area-name">
+                                    <h4 class="text-capitalize">Al-Qurain</h4>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                </div>
+                                <!-- area status -->
+
+                                <!-- Checked switch -->
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all -areas">
+
+                            <div class="area-container d-flex justify-content-between">
+                                <div class="area-name">
+                                    <h4 class="text-capitalize">Al-Qurain</h4>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                </div>
+                                <!-- area status -->
+
+                                <!-- Checked switch -->
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </article>
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
