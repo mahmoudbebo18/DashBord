@@ -22,4 +22,9 @@ $(document).ready(function() {
         }
     });
 
+    $('.show-desc').click(function(e) {
+        e.preventDefault();
+        $('.add-desc').slideToggle()
+    })
+
 })

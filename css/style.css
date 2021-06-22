@@ -417,6 +417,11 @@ body {
     padding-bottom: 10px; }
     .categories .cat-head .cat-name h5 {
       font-size: 18px; }
+      .categories .cat-head .cat-name h5 a {
+        font-weight: normal;
+        margin-left: 10px; }
+        .categories .cat-head .cat-name h5 a i {
+          margin-right: 3px; }
     .categories .cat-head .cat-name a {
       color: #d7aa2e;
       text-decoration: none;
@@ -571,5 +576,11 @@ body {
     .areas .available-areas .area-container .area-name p span {
       font-weight: bold;
       color: #f93154; }
+
+.add-desc {
+  display: none; }
+
+#catModalCenter .adding-item {
+  height: auto !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -598,6 +598,13 @@ body {
         .cat-name {
             h5 {
                 font-size: 18px;
+                a {
+                    font-weight: normal;
+                    margin-left: 10px;
+                    i {
+                        margin-right: 3px;
+                    }
+                }
             }
             a {
                 color: $mainColor;
@@ -821,5 +828,15 @@ body {
                 }
             }
         }
+    }
+}
+
+.add-desc {
+    display: none;
+}
+
+#catModalCenter {
+    .adding-item {
+        height: auto !important
     }
 }
