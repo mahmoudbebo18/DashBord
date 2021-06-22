@@ -47,6 +47,10 @@
                     <li>
                         <a href="areas.html"><i class="fas fa-map-marker-alt"></i> Areas </a>
                     </li>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    </li>
+
 
                 </ul>
             </div>
@@ -57,13 +61,13 @@
 
 
                 <div class="users">
+                    <a data-toggle="modal" data-target="#addUser" class="add-new" href="#"> <i class="fas fa-plus"></i> Add New User</a>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col"> Phone</th>
-                                <th scope="col">Branches</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Options</th>
                             </tr>
@@ -74,9 +78,7 @@
                                 <td>Mahmoud</td>
                                 <td>Ex@gmail.com</td>
                                 <td>01282414570 </td>
-                                <td>
-                                    All Brances Will Appear here
-                                </td>
+
                                 </td>
                                 <td class="">
                                     <!-- Default switch -->
@@ -89,6 +91,10 @@
                                     <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
                                         <i class="fas fa-trash"></i>
                                     </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -96,9 +102,7 @@
                                 <td>Mahmoud</td>
                                 <td>Ex@gmail.com</td>
                                 <td>01282414570 </td>
-                                <td>
-                                    All Brances Will Appear here
-                                </td>
+
                                 </td>
                                 <td class="">
                                     <!-- Default switch -->
@@ -111,6 +115,10 @@
                                     <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
                                         <i class="fas fa-trash"></i>
                                     </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -118,9 +126,7 @@
                                 <td>Mahmoud</td>
                                 <td>Ex@gmail.com</td>
                                 <td>01282414570 </td>
-                                <td>
-                                    All Brances Will Appear here
-                                </td>
+
                                 </td>
                                 <td class="">
                                     <!-- Default switch -->
@@ -133,6 +139,10 @@
                                 <td>
                                     <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
                                         <i class="fas fa-trash"></i>
+                                    </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -213,26 +223,7 @@
                                                             </td>
 
                                                         </tr>
-                                                        <tr>
 
-                                                            <td>Accessable Branches</td>
-                                                            <td>
-                                                                <input value="add some values here" type="text" class="form-control">
-                                                            </td>
-
-                                                        </tr>
-                                                        <tr>
-
-                                                            <td>Manage Bookings</td>
-                                                            <td>
-                                                                <!-- Default switch -->
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
                                                     </tbody>
                                                 </table>
 
@@ -283,7 +274,7 @@
                                                         </tr>
                                                         <tr>
 
-                                                            <td>Manage Downloads</td>
+                                                            <td>Manage Settings</td>
                                                             <td>
                                                                 <div class="form-check form-switch">
                                                                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
@@ -294,7 +285,7 @@
                                                         </tr>
                                                         <tr>
 
-                                                            <td>Manage Customers & Guests</td>
+                                                            <td>Manage Orders</td>
                                                             <td>
                                                                 <!-- Checked switch -->
                                                                 <div class="form-check form-switch">
@@ -307,7 +298,7 @@
 
                                                         <tr>
 
-                                                            <td>Accessable Branches</td>
+                                                            <td>Manage Users</td>
                                                             <td>
                                                                 <div class="form-check form-switch">
                                                                     <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
@@ -316,18 +307,7 @@
                                                             </td>
 
                                                         </tr>
-                                                        <tr>
 
-                                                            <td>Manage Bookings</td>
-                                                            <td>
-                                                                <!-- Default switch -->
-                                                                <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-
-                                                                </div>
-                                                            </td>
-
-                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -375,6 +355,95 @@
         </div>
     </div>
     <!--Modal: modalConfirmDelete-->
+
+
+
+
+    <!-- edit user -->
+
+    <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Edit Informations</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-outline">
+                        <input value="Mahmoud Elkhateb" type="text" id="typeEmail" class="form-control" />
+
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input value="Ex@Gmail.com" type="email" id="typeEmail" class="form-control" />
+
+                    </div>
+                    <div class="form-outline mt-4">
+                        <input value="Ex@Gmail.com" type="password" id="typeEmail" class="form-control" />
+
+                    </div>
+
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-danger  ">Save</a>
+                    <a type="button" class="btn btn-outline-danger  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Add New Uder -->
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Add New User </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-outline">
+                        <input type="text" id="typeName" class="form-control" />
+                        <label class="form-label" for="typeName">
+                            <i class="fas fa-user mr-2"></i>Name
+                        </label>
+                    </div>
+                    <div class="form-outline mt-3 mb-3">
+                        <input type="email" id="typeEmail" class="form-control" />
+                        <label class="form-label" for="typeEmail">
+                            <i class="fas fa-envelope-open mr-2"></i>Email
+                        </label>
+                    </div>
+                    <div class="form-outline">
+                        <input type="password" id="typePassword" class="form-control" />
+                        <label class="form-label" for="typePassword">
+                            <i class="fas fa-key mr-2"></i>Password
+                        </label>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -387,6 +456,10 @@
             var image = document.getElementById('output');
             image.src = URL.createObjectURL(event.target.files[0]);
         };
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
 </body>
 

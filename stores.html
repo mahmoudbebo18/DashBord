@@ -47,6 +47,10 @@
                     <li>
                         <a href="areas.html"><i class="fas fa-map-marker-alt"></i> Areas </a>
                     </li>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    </li>
+
 
                 </ul>
             </div>
@@ -57,6 +61,7 @@
 
 
                 <div class="users">
+                    <a data-toggle="modal" data-target="#addUser" class="add-new" href="#"> <i class="fas fa-plus"></i> Add New Store</a>
                     <table class="table">
                         <thead>
                             <tr>
@@ -64,6 +69,7 @@
                                 <th scope="col">Arabic Title</th>
                                 <th scope="col"> Status</th>
                                 <th scope="col">Working Hours</th>
+                                <th>Options</th>
 
                             </tr>
                         </thead>
@@ -85,6 +91,15 @@
                                         <p class="font-weight-bold">To : 12PM</p>
                                     </div>
                                 </td>
+                                <td>
+                                    <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
 
 
                             </tr>
@@ -105,6 +120,15 @@
                                         <p class="font-weight-bold">To : 12PM</p>
                                     </div>
                                 </td>
+                                <td>
+                                    <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
 
 
                             </tr>
@@ -124,6 +148,15 @@
                                         <p class="font-weight-bold">From : 10AM</p>
                                         <p class="font-weight-bold">To : 12PM</p>
                                     </div>
+                                </td>
+                                <td>
+                                    <a class="text-danger" data-toggle="modal" data-target="#modalConfirmDelete" href="#">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                    <!-- edit modal is  after all page content -->
+                                    <a class="text-primary ml-3" data-toggle="modal" data-target="#editUser" href="#">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
                                 </td>
 
 
@@ -136,6 +169,114 @@
         </article>
     </section>
 
+
+
+
+    <!-- edit store -->
+
+
+    <!-- edit user -->
+
+    <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Edit Informations</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-outline">
+                        <input value="Store Name" type="text" id="typeName" class="form-control" />
+
+                    </div>
+                    <div class="form-outline mt-3 mb-3">
+                        <input value="Store Arabic Name" type="text" id="typeName" class="form-control" />
+
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block text-left">Working Hours</label>
+                        <div class="form-outline mt-3 mb-3">
+                            <input value="From : 12AM" type="text" id="typeName" class="form-control" />
+
+                        </div>
+                        <div class="form-outline mt-3 mb-3">
+                            <input value="To : 12PM" type="text" id="typeName" class="form-control" />
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- add new store -->
+
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Add New Store </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-outline">
+                        <input type="text" id="typeName" class="form-control" />
+                        <label class="form-label" for="typeName">
+                            <i class="fas fa-user mr-2"></i>Name
+                        </label>
+                    </div>
+                    <div class="form-outline mt-3 mb-3">
+                        <input type="text" id="typeName" class="form-control" />
+                        <label class="form-label" for="typeName">
+                            <i class="fas fa-user mr-2"></i>Arabic Name
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block text-left">Working Hours</label>
+                        <div class="form-outline mt-3 mb-3">
+                            <input type="text" id="typeName" class="form-control" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-clock mr-2"></i>From
+                            </label>
+                        </div>
+                        <div class="form-outline mt-3 mb-3">
+                            <input type="text" id="typeName" class="form-control" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-clock mr-2"></i>To
+                            </label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 
 
     <!-- confirm delete modal -->
@@ -152,7 +293,7 @@
                 <!--Body-->
                 <div class="modal-body">
 
-                    <i class="fas fa-times fa-4x animated rotateIn"></i>
+                    <i class="fas fa-times fa-4x animated rotateIn text-danger"></i>
 
                 </div>
 
@@ -165,7 +306,6 @@
             <!--/.Content-->
         </div>
     </div>
-    <!--Modal: modalConfirmDelete-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

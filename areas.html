@@ -47,6 +47,9 @@
                     <li class="active">
                         <a href="areas.html"><i class="fas fa-map-marker-alt"></i> Areas </a>
                     </li>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    </li>
 
                 </ul>
             </div>
@@ -57,6 +60,7 @@
 
 
                 <div class="users">
+                    <a data-toggle="modal" data-target="#addUser" class="add-new d-inline-block mb-3" href="#"> <i class="fas fa-plus"></i> Add New Area</a>
                     <div class="cover-head d-flex justify-content-between">
                         <div class="heading">
                             <h5>Coverage Area</h5>
@@ -91,11 +95,26 @@
                         <div class="all -areas">
 
                             <div class="area-container d-flex justify-content-between">
-                                <div class="area-name">
-                                    <h4 class="text-capitalize">Al-Qurain</h4>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                <div class="main-holder-for-area d-flex">
+                                    <div class="area-name">
+                                        <h4 class="text-capitalize">Al-Qurain
+                                            <span data-toggle="modal" data-target="#editArea" class="editing">
+                                                <i class="fas fa-edit"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="font-weight-bold">Branches</label>
+                                        <select class=" custom-select form-control">
+                                            <option selected="">Select..</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <!-- area status -->
 
@@ -111,11 +130,26 @@
                         <div class="all -areas">
 
                             <div class="area-container d-flex justify-content-between">
-                                <div class="area-name">
-                                    <h4 class="text-capitalize">Al-Qurain</h4>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                <div class="main-holder-for-area d-flex">
+                                    <div class="area-name">
+                                        <h4 class="text-capitalize">Al-Qurain
+                                            <span data-toggle="modal" data-target="#editArea" class="editing">
+                                                <i class="fas fa-edit"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="font-weight-bold">Branches</label>
+                                        <select class=" custom-select form-control">
+                                            <option selected="">Select..</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <!-- area status -->
 
@@ -128,11 +162,26 @@
                         <div class="all -areas">
 
                             <div class="area-container d-flex justify-content-between">
-                                <div class="area-name">
-                                    <h4 class="text-capitalize">Al-Qurain</h4>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
-                                    <p class="text-capitalize">min order amount : <span>1</span></p>
+                                <div class="main-holder-for-area d-flex">
+                                    <div class="area-name">
+                                        <h4 class="text-capitalize">Al-Qurain
+                                            <span data-toggle="modal" data-target="#editArea" class="editing">
+                                                <i class="fas fa-edit"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                        <p class="text-capitalize">min order amount : <span>1</span></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="font-weight-bold">Branches</label>
+                                        <select class=" custom-select form-control">
+                                            <option selected="">Select..</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <!-- area status -->
 
@@ -150,6 +199,129 @@
             </div>
         </article>
     </section>
+
+
+
+
+    <!-- add new area -->
+
+    <div class="modal fade new-area-modal" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Add New Area </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-outline">
+                            <input type="text" id="typeName" class="form-control" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-user mr-2"></i>Name
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="d-block text-left mt-3">Branches</label>
+                            <select class="custom-select">
+                                <option selected="">Select..</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="form-outline">
+                            <input type="text" id="typeName" class="form-control" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-money-bill mr-2"></i>Minimum Charge
+                            </label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="text" id="typeName" class="form-control mt-3 mb-3" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-clock mr-2"></i>Delivery Time
+                            </label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="text" id="typeName" class="form-control" />
+                            <label class="form-label" for="typeName">
+                                <i class="fas fa-money-bill mr-2"></i>Delivery Charge
+                            </label>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- edit area -->
+
+    <div class="modal fade new-area-modal" id="editArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Edit Area </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="d-block text-left">Name</label>
+                            <input value="Al-Qurain" type="text" id="typeName" class="form-control" />
+
+                        </div>
+                        <div class="form-group">
+                            <label class="d-block text-left mt-3">Branches</label>
+                            <select class="custom-select">
+                                <option selected="">Select..</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="d-block text-left" for="">Min Charge</label>
+                            <input value="100 KWD" type="text" id="typeName" class="form-control" />
+
+                        </div>
+                        <div class="form-group">
+                            <label class="d-block text-left" for=""> Delivery Time </label>
+                            <input value="45 Min" type="text" id="typeName" class="form-control mt-3 mb-3" />
+
+                        </div>
+                        <div class="form-group">
+                            <label class="d-block text-left" for="">Delivery Charge </label>
+                            <input value="12 KWD" type="text" id="typeName" class="form-control" />
+
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
