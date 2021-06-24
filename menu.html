@@ -65,7 +65,8 @@
                         <!-- category name and description-->
                         <div class="cat-name">
                             <h5 class="text-uppercase"> This Is The category name
-                                <a data-toggle="modal" data-target="#catModalCenter" href="#"><i class="fas fa-plus"></i> Add New Category</a>
+                                <a data-toggle="modal" data-target="#catModalCenter" href="#"><i
+                                        class="fas fa-plus"></i> Add New Category</a>
                             </h5>
                             <a class="show-desc" href="#">Add Description</a>
                             <p class="mt-2">
@@ -88,7 +89,11 @@
                         <div class="item d-flex">
                             <img src="imgs/burger.jpeg">
                             <div class="item-info">
-                                <h6 class="text-capitalize">this is item name </h6>
+                                <h6 class="text-capitalize">this is item name
+                                    <span data-toggle="modal" data-target="#editArea" class="editing">
+                                        <i class="fas fa-edit"></i>
+                                    </span>
+                                </h6>
                                 <p>this is item caption will take 1 line max</p>
                                 <span> <span class="price">1.25</span> KWD</span>
                             </div>
@@ -96,7 +101,12 @@
                         <div class="item d-flex">
                             <img src="imgs/burger.jpeg">
                             <div class="item-info">
-                                <h6 class="text-capitalize">this is item name </h6>
+                                <h6 class="text-capitalize">this is item name
+
+                                    <span data-toggle="modal" data-target="#editArea" class="editing">
+                                        <i class="fas fa-edit"></i>
+                                    </span>
+                                </h6>
                                 <p>this is item caption will take 1 line max</p>
                                 <span> <span class="price">1.25</span> KWD</span>
                             </div>
@@ -118,7 +128,7 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLongTitle">Add New Item </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -231,7 +241,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add New Category</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -241,14 +251,14 @@
                         <div class="form-outline">
                             <input type="email" id="typeEmail" class="form-control" />
                             <label class="form-label" for="typeEmail">
-                           Name
-                        </label>
+                                Name
+                            </label>
                         </div>
                         <div class="form-outline mt-3">
                             <input type="email" id="typeEmail" class="form-control" />
                             <label class="form-label" for="typeEmail">
-                           Description
-                        </label>
+                                Arabic Name
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -257,6 +267,63 @@
                     <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- edit item modal -->
+
+    <div class="modal fade new-area-modal" id="editArea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Edit Item </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <form>
+                        <p class="upload-area" style="position: relative; height:185px">
+                            <img src="imgs/burger.jpeg" id="output" width="100%" height="100%">
+
+                        </p>
+                        <div class="uploading">
+                            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                            <p class="upload-label"><label for="file" style="cursor: pointer; margin: 0;">Upload
+                                    Image <i class="fas fa-upload"></i></label></p>
+                        </div>
+                        <div class="form-outline">
+                            <input type="email" id="typeEmail" class="form-control" />
+                            <label class="form-label" for="typeEmail">
+                                Name
+                            </label>
+                        </div>
+                        <div class="form-outline mb-2 mt-2">
+                            <input type="email" id="typeEmail" class="form-control" />
+                            <label class="form-label" for="typeEmail">
+                                Description
+                            </label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="email" id="typeEmail" class="form-control" />
+                            <label class="form-label" for="typeEmail">
+                                Price
+                            </label>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary   waves-effect waves-light">Save</a>
+                    <a type="button" class="btn btn-danger text-white  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
         </div>
     </div>
 

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- chorom meta inspect -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!--dashBord Holder-->
+
+    <section class="dashbord">
+        <aside class="dash-link">
+            <div class="heading">
+                <h5 class="text-center">Admin Dashbord</h5>
+            </div>
+            <div class="links">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="order.html"><i class="fas fa-shopping-basket"></i> Orders </a>
+                    </li>
+                    <li>
+                        <a href="menu.html"><i class="far fa-clipboard"></i> Menu </a>
+                    </li>
+                    <li>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings </a>
+                    </li>
+                    <li class="active">
+                        <a href="users.html"><i class="fas fa-users"></i> Users </a>
+                    </li>
+                    <li>
+                        <a href="stores.html"><i class="fas fa-store"></i> Stores </a>
+                    </li>
+                    <li>
+                        <a href="areas.html"><i class="fas fa-map-marker-alt"></i> Areas </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </aside>
+        <article class="dash-content">
+            <div class="orders order-details">
+
+
+                <div class="users">
+                    <!-- Edit Details &&& permisions-->
+                    <div class="user-permision">
+                        <div class="container my-4">
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-xl-6 mb-4 mb-xl-0">
+                                    <!-- Section: Live preview -->
+                                    <section>
+
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Manage
+                                                    Details</a>
+                                            </li>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Permisions</a>
+                                            </li>
+
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">Manage Details</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>
+                                                                <input value="Mahmoud" type="text" class="form-control">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Email</td>
+                                                            <td>
+                                                                <input value="Ex@gmail.com" type="email" class="form-control">
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Password</td>
+                                                            <td>
+                                                                <input value="01234456" type="password" class="form-control">
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Phone</td>
+                                                            <td>
+                                                                <input value="01234456" type="text" class="form-control">
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Status</td>
+                                                            <td>
+                                                                <!-- Checked switch -->
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+
+                                                            </td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col">Manage Permisions</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Manage Menu</td>
+                                                            <td>
+                                                                <!-- Checked switch -->
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Manage Stores</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+                                                            </td>
+
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Manage Areas</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Manage Settings</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Manage Orders</td>
+                                                            <td>
+                                                                <!-- Checked switch -->
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <td>Manage Users</td>
+                                                            <td>
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+
+                                    </section>
+                                    <!-- Section: Live preview -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+    <!-- confirm delete modal -->
+    <!--Modal: modalConfirmDelete-->
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Are you sure?</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <i class="fas fa-times fa-4x animated rotateIn text-danger"></i>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-outline-danger">Yes</a>
+                    <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalConfirmDelete-->
+
+
+
+
+    <!-- edit user -->
+
+    <div class="modal fade" id="editUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Edit Informations</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-danger  ">Save</a>
+                    <a type="button" class="btn btn-outline-danger  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Add New Uder -->
+    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Add New User </p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-outline">
+                        <input type="text" id="typeName" class="form-control" />
+                        <label class="form-label" for="typeName">
+                            <i class="fas fa-user mr-2"></i>Name
+                        </label>
+                    </div>
+                    <div class="form-outline mt-3 mb-3">
+                        <input type="email" id="typeEmail" class="form-control" />
+                        <label class="form-label" for="typeEmail">
+                            <i class="fas fa-envelope-open mr-2"></i>Email
+                        </label>
+                    </div>
+                    <div class="form-outline">
+                        <input type="password" id="typePassword" class="form-control" />
+                        <label class="form-label" for="typePassword">
+                            <i class="fas fa-key mr-2"></i>Password
+                        </label>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-primary  ">Save</a>
+                    <a type="button" class="btn btn-outline-primary  waves-effect" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
