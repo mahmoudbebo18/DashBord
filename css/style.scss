@@ -912,3 +912,18 @@ body {
     border-color: $mainColor;
     transition: .3s;
 }
+
+.add-option-to-item {
+    h5 {
+        font: {
+            size: 15px;
+            weight: bold
+        }
+        text-align: left;
+    }
+    .sortableList {
+        li {
+            cursor: pointer;
+        }
+    }
+}

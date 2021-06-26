@@ -299,10 +299,22 @@
                                 Name
                             </label>
                         </div>
+                        <div class="form-outline mt-2">
+                            <input type="email" id="typeEmail" class="form-control" />
+                            <label class="form-label" for="typeEmail">
+                                Arabic Name
+                            </label>
+                        </div>
                         <div class="form-outline mb-2 mt-2">
                             <input type="email" id="typeEmail" class="form-control" />
                             <label class="form-label" for="typeEmail">
                                 Description
+                            </label>
+                        </div>
+                        <div class="form-outline mb-2 mt-2">
+                            <input type="email" id="typeEmail" class="form-control" />
+                            <label class="form-label" for="typeEmail">
+                                Arabic Description
                             </label>
                         </div>
                         <div class="form-outline">
@@ -310,6 +322,60 @@
                             <label class="form-label" for="typeEmail">
                                 Price
                             </label>
+                        </div>
+
+                        <div class="add-option-to-item my-3">
+
+                            <div>
+                                <h5 class="mb-2">Add Option</h5>
+                                <ul class="sortableList list-unstyled text-left">
+                                    <li class="ui-state-default p-2 alert alert-info">
+                                        <div class="first-opt d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-list mr-2"></i>
+                                                <p style="margin:0">This is first option name </p>
+                                            </div>
+                                            <a href="#" class="delete-option text-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="ui-state-default p-2 alert alert-info">
+                                        <div class="first-opt d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-list mr-2"></i>
+                                                <p style="margin:0">This is second option name </p>
+                                            </div>
+                                            <a href="#" class="delete-option text-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="ui-state-default p-2 alert alert-info">
+                                        <div class="first-opt d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-list mr-2"></i>
+                                                <p style="margin:0">This is third option name </p>
+                                            </div>
+                                            <a href="#" class="delete-option text-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="ui-state-default p-2 alert alert-info">
+                                        <div class="first-opt d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-list mr-2"></i>
+                                                <p style="margin:0">This is fourth option name </p>
+                                            </div>
+                                            <a href="#" class="delete-option text-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
 
                     </form>
@@ -328,7 +394,36 @@
     </div>
 
 
+
+    <!--Modal: modalConfirmDelete-->
+    <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Are you sure?</p>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <i class="fas fa-trash fa-4x animated rotateIn text-danger"></i>
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer flex-center">
+                    <a href="" class="btn  btn-outline-danger">Yes</a>
+                    <a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">No</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
@@ -338,6 +433,21 @@
             var image = document.getElementById('output');
             image.src = URL.createObjectURL(event.target.files[0]);
         };
+
+        $(document).ready(function() {
+            $(".sortableList").sortable({
+                revert: true,
+                /*update: function (event, ui) {
+                    // Some code to prevent duplicates
+                }*/
+            });
+            $(".draggable").draggable({
+                connectToSortable: '.sortableList',
+                cursor: 'pointer',
+                helper: 'clone',
+                revert: 'invalid'
+            });
+        });
     </script>
 </body>
 

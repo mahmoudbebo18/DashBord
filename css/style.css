@@ -637,4 +637,11 @@ body {
   border-color: #d7aa2e;
   transition: .3s; }
 
+.add-option-to-item h5 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left; }
+.add-option-to-item .sortableList li {
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
