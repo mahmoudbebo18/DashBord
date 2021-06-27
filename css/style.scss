@@ -459,9 +459,11 @@ body {
                             border-right: 1px solid #ccc;
                             border-bottom: none;
                             text-align: center;
+                            font-size: 11px;
+    padding: 10px 8px;
                             font: {
                                 weight: bold;
-                                size: 13px;
+                   
                             }
                         }
                          :last-child {

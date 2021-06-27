@@ -325,8 +325,9 @@ body {
         border-right: 1px solid #ccc;
         border-bottom: none;
         text-align: center;
-        font-weight: bold;
-        font-size: 13px; }
+        font-size: 11px;
+        padding: 10px 8px;
+        font-weight: bold; }
       .dashbord .dash-content .orders .table thead tr :last-child {
         border-right: none; }
       .dashbord .dash-content .orders .table tbody th {
